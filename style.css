@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'Minecraft Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minecraft Regular'), url('assets/fonts/1_MinecraftRegular1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minecraft Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minecraft Italic'), url('assets/fonts/2_MinecraftItalic1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minecraft Bold';
+    font-style: bold;
+    font-weight: bold;
+    src: local('Minecraft Bold'), url('assets/fonts/3_MinecraftBold1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minecraft Bold Italic';
+    font-style: bold;
+    font-weight: bold;
+    src: local('Minecraft Bold Italic'), url('assets/fonts/4_MinecraftBoldItalic1.woff') format('woff');
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +34,8 @@
 }
 
 body{
-    font-family: "Minecraft", sans-serif !important;
+    font-family: 'Minecraft Regular', sans-serif !important;
 }
-
 
 .header{
     display: flex;
@@ -22,7 +50,6 @@ body{
 
 .logo{
     width: 280px;
-    height: 81px;
 }
 
 .logo:hover{
@@ -37,7 +64,6 @@ body{
     font-size: 11px;
     padding: 36px 15px;
     letter-spacing: 1.5px;
-    font-family: "Minecrafter", sans-serif;
     border-bottom: 3px solid white;
     color: black;
     text-decoration: none;
@@ -67,7 +93,6 @@ body{
     letter-spacing: 1.5px;
     font-size: 12px;
     border: 3px solid #0F282B;
-    font-family: "Minecrafter", sans-serif;
 }
 
 .navbar-btn:hover{
@@ -82,7 +107,7 @@ body{
     color: white;
     display: flex;
     justify-content: space-evenly;
-    padding: 150px 60px 60px 60px;
+    padding: 120px 60px 60px 60px;
 }
 
 .section1-container{
@@ -107,7 +132,6 @@ body{
     letter-spacing: 1.5px;
     font-size: 12px;
     border: 3px solid #0F282B;
-    font-family: "Minecrafter", sans-serif;
     margin-top: 50px !important;
 }
 
@@ -134,14 +158,15 @@ body{
 }
 
 .investor-names img{
-    width: 143.33px!important;
+    width: 160px !important;
     height: 40px;
-    margin-right: 0 !important;
+    object-fit: contain;
+    display: block;
 }
 
 .slick-initialized .slick-slide{
-    width: 143.33px!important;
-    margin-right: 60px;
+    width: 200px!important;
+    margin-right: 20px;
 }
 
 .w-200{
@@ -192,7 +217,6 @@ body{
 
 .btn2{
     font-size: 19px;
-    font-family: "Minecrafter", sans-serif;
     display: flex;
     justify-content: center;
     width: max-content;
@@ -476,7 +500,6 @@ body{
 
 .footer-text{
     font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     padding: 10px;
 }
@@ -491,3 +514,43 @@ body{
     cursor: pointer;
 }
 
+
+/* styles added by me */
+#videoContainer {
+    max-width: 1200px;
+}
+
+#citySlider {
+    max-width: 1400px;
+    height: 320px;
+    margin: 40px auto;
+    margin-bottom: 80px;
+}
+
+.citySlide {
+    width: 300px !important;
+    margin: 0px 80px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.citySlide::first-child {
+    margin-left: 0px;
+}
+
+.cityBadge {
+    width: 275px;
+}
+
+.cityname {
+    text-align: center;
+    text-transform: capitalize;
+    width: 275px;
+}
+
+.slick-dots li button:before {
+    opacity: .25;
+    color: #fff !important;
+}
