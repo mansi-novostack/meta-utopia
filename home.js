@@ -5,5 +5,3 @@ arrowTop.addEventListener("click", function(){
   alert('hi');
   banner.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 });
-
-    

@@ -37,6 +37,15 @@ body{
     font-family: 'Minecraft Regular', sans-serif !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    width: 1440px;
+    margin: 0px auto;
+}
+
 .header{
     display: flex;
     justify-content: space-evenly;
@@ -102,12 +111,16 @@ body{
     cursor: pointer;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .section1{
     background-color: #11191D;
     color: white;
     display: flex;
     justify-content: space-evenly;
-    padding: 120px 60px 60px 60px;
+    padding: 180px 60px 120px 60px;
 }
 
 .section1-container{
@@ -553,4 +566,89 @@ body{
 .slick-dots li button:before {
     opacity: .25;
     color: #fff !important;
+}
+
+#popup {
+    background-image: linear-gradient(150deg, #031C46 0%, #0E192B 82%);
+    padding: 20px;
+    margin: auto;
+    width: max-content;
+    max-width: 640px;
+    position: fixed;
+    text-align: center;
+    z-index: 111;
+    left: calc(calc(100vw - 640px) / 2 );
+    z-index: 11;
+    top: 20%;
+}
+
+#popup::before {
+    position: fixed;
+    z-index: -11;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+    overflow-y: hidden;
+}
+
+#popup img {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+#closeButton {
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+#popup h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#popup input[type="text"] {
+    display: block;
+    margin: 8px 0px;
+    width: 100%;
+    padding: 8px 12px;
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+#popup input[type="text"]:focus {
+    outline: none;
+    border: none;
+}
+
+#popup input[type="submit"] {
+    display: block;
+    margin: 20px 0px;
+    width: 100%;
+    padding: 8px 12px;
+    background: #293a53;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+#popup p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    color: #FFF;
+    opacity: .7;
+    font-size: .8rem;
+    text-align: center;
 }
