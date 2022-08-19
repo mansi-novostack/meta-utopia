@@ -854,6 +854,8 @@ a {
         visibility: hidden;
     }
     .menuIcon {
+        visibility: visible;
+        display: block;
         margin-right: 40px;
         background: transparent;
         outline: none;
