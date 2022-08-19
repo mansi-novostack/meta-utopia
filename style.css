@@ -26,6 +26,7 @@
     src: local('Minecraft Bold Italic'), url('assets/fonts/4_MinecraftBoldItalic1.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@100;300;400;600;700&display=swap');
 
 *{
     margin: 0;
@@ -48,7 +49,7 @@ a {
 
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top:0;
@@ -511,6 +512,8 @@ a {
     font-size: 12px;
     font-weight: 200;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .top-arrow-icon{
@@ -757,5 +760,158 @@ a {
         display: block;
         width: fit-content;
         margin: 30px auto;
+    }
+    .play-btn {
+        top: 30%;
+        left: 43%;
+    }
+    .section2_2 {
+        padding-bottom: 0px;
+    }
+    .btn2 {
+        margin-top: 50px;
+    }
+    .section2_1 {
+        padding-bottom: 40px;
+    }
+    .section2_2 h3 {
+        margin-bottom: 30px;
+    }
+    .section2_3-img {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+    .section2_3-container h3 {
+        margin-bottom: 40px;
+    }
+    .section2_3 {
+        padding: 5%;
+    }
+    .section2_4 {
+        padding: 5%;
+    }
+    .section2_5 {
+        padding: 5%;
+        flex-direction: column;
+    }
+    .section2_5-img {
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    .map1 p, .map2 p, .map3 p {
+        margin-bottom: 18px;
+        font-size: .8rem;
+    }
+    .icon1 {
+        margin-right: 280px;
+    }
+    .roadmap-s1 {
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+    .icon-container {
+        margin-top: -100px;
+    }
+    .icon-container img {
+        margin-bottom: 20px;
+    }
+    .map2 {
+        margin-right: 0px;
+    }
+    .icon3-div {
+        padding: 0px;
+        margin-bottom: -100px;
+        margin-top: 40px;
+    }
+    .footer-text {
+        text-align: justify;
+    }
+    .top-arrow-icon {
+        margin-left: 20px;
+    }
+    .footer-logo {
+        margin: 0px 20px;
+    }
+    .navbar {
+        display: none !important;
+        visibility: hidden;
+    }
+    .header .navbar-btn {
+        display: none;
+        visibility: hidden;
+    }
+    .menuIcon {
+        margin-right: 40px;
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 1.6rem;
+    }
+    .menuIcon:hover,
+    .menuIcon:focus {
+        color: #2D0889;
+    }
+
+    #mobileMenu {
+        width: 100vw;
+        background: #8E8E8E;
+        margin-top: 95px;
+        position: fixed;
+        z-index: 6;
+    }
+
+    .menu-link {
+        display: block;
+        visibility: visible;
+        border-top: 1px solid rgba(255, 255, 255, 0.35);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        padding: 12px;
+    }
+
+    .menu-link:hover {
+        background: #11191D;
+        color: #fff;
+    }
+
+    #mobileMenu.notVisible {
+        display: none;
+        visibility: hidden;
+    }
+
+    #menuClose {
+        display: none;
+        visibility: hidden;
+    }
+    #menuClose.isVisible {
+        display: block;
+        visibility: visible;
+    }
+
+    #menuOpen.isClosed {
+        display: none;
+        visibility: hidden;
+    }
+    .font-size {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 0;
+    }
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        height: auto;
+        width: 180px;
     }
 }
