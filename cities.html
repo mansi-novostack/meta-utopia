@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- ✅ Load slick CSS ✅  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ✅ Load slick theme CSS ✅ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header" id="header">
-            <img src="./assets/logo.png" alt="logo" class="logo">
+            <img src="assets/logo.png" alt="logo" class="logo">
             <div class="navbar">
-                <a href="./home.html">HOME</a>
-                <a href="./cities.html">CITIES</a>
-                <a>ROADMAP</a>
-                <a>WHITEPAPER</a>
-                <a>FAQ</a>
+                <a href="index.html">HOME</a>
+                <a href="cities.html">CITIES</a>
+                <a href="">ROADMAP</a>
+                <a href="">WHITEPAPER</a>
+                <a href="">FAQ</a>
             </div>
             <a class="navbar-btn">LEARN MORE</a>                    
         </header>
@@ -29,34 +41,63 @@
                 <p>CREATING VALUE IN THE METAVERSE</p>
             </div>      
             <div>
-                <img src="./assets/sec2.png" alt="section1-img" class="section1-img">
+                <img src="assets/sec2.png" alt="section1-img" class="section1-img">
             </div>        
         </section>
 
         <div class="investor">
             <div class="investor-names">
-                <img src="./assets/PANCAKE-SWAP-02-2048x334.png" alt="img1">
-                <img src="./assets/metamask-highres.webp" alt="img2">
-                <img src="./assets/coingecko-branding-guide-4f5245361f7a47478fa54c2c57808a9e05d31ac7ca498ab189a3827d6000e22b.webp" alt="img3">
-                <img src="./assets/CMC-02-2048x375.png" alt="img4">
-                <img src="./assets/certik.png" alt="img5">
-                <img src="./assets/bsc.png" alt="img6">
+                <img src="assets/PANCAKE-SWAP-02-2048x334.png" alt="img1">
+                <img src="assets/metamask-highres.webp" alt="img2">
+                <img src="assets/coingecko-branding-guide-4f5245361f7a47478fa54c2c57808a9e05d31ac7ca498ab189a3827d6000e22b.webp" alt="img3">
+                <img src="assets/CMC-02-2048x375.png" alt="img4">
+                <img src="assets/certik.png" alt="img5">
+                <img src="assets/bsc.png" alt="img6">
             </div>
         </div>
 
         <div class="cities-container">
+
+            <!-- City Row -->
             <section class="city-section">
-                <div class="meta-city-detail">
-                    <h3>META DUBAI</h3>
-                    <img src="./assets/meta-dubai-icon.png" alt="city-icon">
-                    
+                <div class="cityMeta">
+                    <h2 class="cityName">META DUBAI</h2>
+                    <img src="assets/cities/meta-dubai-icon.png" class="cityBadge" alt="city-icon">
+                    <p><i aria-hidden="true" class="fas fa-map icon"></i><span>Land Size : </span><span>1x1</span></p>
+                    <p><i aria-hidden="true" class="fas fa-map-pin icon"></i><span>Landmark : </span><span>-178, 141</span></p>
+                    <a href="" class="greenButton">View City in sandbox</a>
                 </div>
-                <div class="meta-city-sandbox-image">
-                    <img src="./assets/meta-dubai-sandbox.png" alt="city-sandbox">
+                <div class="sandboxImage">
+                    <img src="assets/meta-dubai-sandbox.png" alt="city-sandbox">
                 </div>
             </section>
+
         </div>
 
     </div>
+
+    <!-- ✅ load jQuery ✅ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- ✅ load Slick ✅ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.investor-names').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                dots: false,
+                arrows: false,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
+    </script>
 </body>
 </html>

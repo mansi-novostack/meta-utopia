@@ -168,6 +168,8 @@ a {
 .investor-names{
     display: flex;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
 .investor-names img{
@@ -363,8 +365,9 @@ a {
 }
 
 .section3-container{
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
+    padding: 5%;
 }
 
 .font-size{
@@ -385,12 +388,6 @@ a {
     line-height: 30px;
 }
 
-.accordion-header{
-    border-right: 10px dashed #11191D !important;
-    border-left: 10px dashed #11191D;
-    
-}
-
 .accordion-button{
     background-color: #11191D !important;
     color: white !important;
@@ -399,8 +396,6 @@ a {
 
 .accordion-button::after {
     background-image: url('./assets/right-arrow.png') !important;
-    /* height: 25px !important;
-    width: 20px !important; */
     transform: scale(0.6);
     margin-left: 20px !important;
 }
@@ -475,9 +470,10 @@ a {
 }
 
 .map3-container{
-    width: 1123px;
+    max-width: 1123px;
     padding: 0 150px 0 20px;
     margin: auto;
+    padding: 5%;
 }
 
 .map3{
@@ -535,9 +531,10 @@ a {
 
 #citySlider {
     max-width: 1400px;
-    height: 320px;
+    height: 320px !important;
     margin: 40px auto;
     margin-bottom: 80px;
+    display: flex;
 }
 
 .citySlide {
@@ -593,7 +590,7 @@ a {
     width: 100vw;
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(2px);
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #popup img {
@@ -651,4 +648,96 @@ a {
     opacity: .7;
     font-size: .8rem;
     text-align: center;
+}
+
+.accordion-header{
+    border-width: 0px 14px;
+    border-style: dashed;
+}
+
+/* cities CSS overridden */
+
+.investor {
+    padding: 25px 10px;
+}
+
+.investor-names {
+    display: flex;
+    justify-content: center;
+}
+
+.investor-names img {
+    width: 143.33px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.cities-container {
+    padding: 100px;
+    background-image: linear-gradient(360deg, #11191D 94%, #06C9A1 100%);
+}
+
+.city-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px !important;
+    margin: 40px auto;
+}
+
+.cityMeta {
+    text-align: center;
+    padding: 40px;
+}
+
+.cityName {
+    font-size: 2.2rem;
+    color: #FFF;
+}
+
+.cityBadge {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.cityMeta p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.cityMeta .icon {
+    color: #06C9A1;
+    padding-right: 20px;
+    width: 40px;
+}
+
+.greenButton {
+    display: block;
+    background: #06C9A1;
+    padding: 12px 32px;
+    color: #000;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+.sandboxImage {
+    padding: 40px;
+}
+
+.sandboxImage img {
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width:1024px) {
+    .map-container,
+    .icon-container {
+        padding: 0px;
+    }
+
+    .investor-names img {
+        height: 40px;
+    }
 }
