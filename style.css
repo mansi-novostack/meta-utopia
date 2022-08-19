@@ -49,7 +49,7 @@ a {
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     top:0;
@@ -733,6 +733,11 @@ a {
     width: 100%;
 }
 
+.menuIcon {
+    display: none;
+    visibility: hidden;
+}
+
 /* Media Queries */
 @media screen and (max-width:1024px) {
     .map-container,
@@ -746,6 +751,10 @@ a {
 }
 
 @media screen and (max-width:900px) {
+
+    .header {
+        justify-content: space-between;
+    }
     .section1,
     .section2_3 {
         flex-direction: column;
