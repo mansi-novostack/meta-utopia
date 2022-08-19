@@ -531,7 +531,7 @@ a {
 
 #citySlider {
     max-width: 1400px;
-    height: 320px !important;
+    height: 360px !important;
     margin: 40px auto;
     margin-bottom: 80px;
     display: flex;
@@ -739,5 +739,23 @@ a {
 
     .investor-names img {
         height: 40px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .section1,
+    .section2_3 {
+        flex-direction: column;
+    }
+    .section1-container h3 {
+        margin-bottom: 20px;
+    }
+    .section1-container p {
+        margin-bottom: 12px;
+    }
+    .btn1 {
+        display: block;
+        width: fit-content;
+        margin: 30px auto;
     }
 }
