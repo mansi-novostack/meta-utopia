@@ -313,6 +313,7 @@ a {
     padding: 10px 20px;
     width: max-content;
     margin: 10px auto;
+    display: block;
 }
 
 .city-btn:hover{
@@ -530,6 +531,12 @@ a {
     max-width: 1200px;
 }
 
+#playBtn {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
 #citySlider {
     max-width: 1400px;
     height: 360px !important;
@@ -578,6 +585,8 @@ a {
     left: calc(calc(100vw - 640px) / 2 );
     z-index: 11;
     top: 20%;
+    display: none;
+    visibility: hidden;
 }
 
 #popup::before {
@@ -617,7 +626,7 @@ a {
     margin: 40px 0px;
 }
 
-#popup input[type="text"] {
+#popup input[type="text"],#popup input[type="email"],#popup input[type="number"]  {
     display: block;
     margin: 8px 0px;
     width: 100%;
@@ -1108,7 +1117,7 @@ a {
     }
     .cityMeta {
         flex-direction: column;
-        
+
     }
 }
 
