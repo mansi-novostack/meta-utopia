@@ -311,8 +311,6 @@ a {
     background-color: #0F282B;
     color: white;
     padding: 10px 20px;
-    display: flex;
-    justify-content: center;
     width: max-content;
     margin: 10px auto;
 }
@@ -924,5 +922,289 @@ a {
     .footer-logo {
         height: auto;
         width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section1-img {
+        height: auto;
+        width: 100%;
+    }
+    #citySlider {
+        height: 300px !important;
+    }
+    .citySlide {
+        margin: 0px 20px !important;
+    }
+    .citySlide:first-child {
+        margin-left: 40px;
+    }
+    .cityBadge, .cityname {
+        width: 180px;
+    }
+    .section4 h3 {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .roadmap-s1 {
+        padding: 40px;
+        border-top: 6px dashed white;
+        border-left: 6px dashed white;
+        border-bottom: 6px dashed white;
+        border-right: 0px;
+        position: relative;
+    }
+    .map-container {
+        flex-direction: column;
+    }
+    .map1, .map2 {
+        margin: 20px auto;
+    }
+    .map2 {
+        margin-top: 60px;
+    }
+    .icon-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: -60px;
+        top: 120px;
+    }
+    .icon-container img {
+        display: block;
+    }
+    .icon1 {
+        margin-right: 0px;
+    }
+    .icon2 {
+        margin-top: 400px;
+    }
+    #popup {
+        max-width: 400px;
+        left: calc(calc(100vw - 400px) / 2 );
+    }
+    #popup img {
+        max-width: 320px;
+    }
+    #popup h1 {
+        font-size: 1.4rem;
+    }
+    .investor {
+        height: 80px !important;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .investor-names img {
+        width: 120px !important;
+    }
+    .slick-initialized .slick-slide {
+        width: 160px !important;
+    }
+    .investor-names .slick-list {
+        height: 50px;
+    }
+    .investor-names img {
+        margin: 10px auto;
+    }
+
+    /* cities page css */
+    .cities-container {
+        padding: 100px 40px;
+    }
+    .city-section {
+        flex-direction: column;
+    }
+    .cityinfo {
+        margin-left: 40px;
+    }
+    .cityMeta {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cityMeta, .sandboxImage {
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .investor {
+        height: 60px !important;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .investor-names img {
+        width: 90px !important;
+    }
+    .slick-initialized .slick-slide {
+        width: 130px !important;
+    }
+    #citySlider {
+        height: 160px !important;
+        margin: 0PX auto;
+    }
+    .citySlide {
+        margin: 0px 20px !important;
+    }
+    .citySlide:first-child {
+        margin-left: 40px;
+    }
+    .cityBadge, .cityname {
+        width: 120px;
+    }
+    .cityBadge {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cityname {
+        font-size: 1rem;
+    }
+    .section2_3-img {
+        width: 90%;
+    }
+    .city-btn {
+        display: block;
+        margin-top: 40px;
+    }
+    .section2_5-container p {
+        font-size: 1rem;
+    }
+    .cityBadge {
+        margin-right: 0px !important;
+    }
+    .font-size {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    .play-btn {
+        top: 30%;
+        left: 42%;
+        width: 75px;
+        height: 75px;
+    }
+    .roadmap-s1 {
+        padding: 40px 20px;
+    }
+    .icon-container {
+        left: -48px;
+    }
+    .icon-container img {
+        width: 80%;
+    }
+    .icon2 {
+        margin-top: 430px;
+    }
+    .icon3 {
+        width: 90px;
+    }
+    .icon3-div {
+        margin-bottom: -80px;
+    }
+    .investor-names .slick-list {
+        height: 40px;
+    }
+    .cityMeta {
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width:320px) {
+    #popup {
+        max-width: 300px;
+        left: calc(calc(100vw - 300px) / 2 );
+    }
+    #popup img {
+        max-width: 200px;
+    }
+    #closeButton {
+        right: 25px;
+        top: 5px;
+    }
+    .roadmap-s1 {
+        margin: 40px 20px;
+        border-top: 4px dashed white;
+        border-left: 4px dashed white;
+        border-bottom: 4px dashed white;
+    }
+    .map1, .map2, .map3 {
+        max-width: 260px;
+        padding: 30px 10px;
+    }
+    .section2_5-container p {
+        font-size: .85rem;
+    }
+    .section2_3-container p {
+        font-size: .85rem;
+    }
+    .section2_2 {
+        padding: 0px;
+    }
+    .section2_3-container h3,
+    .section2_2 h3 {
+        font-size: 1.4rem;
+    }
+    .btn2 {
+        font-size: 1rem;
+    }
+    .play-btn {
+        top: 25%;
+        left: 42%;
+        width: 50px;
+        height: 50px;
+    }
+    .investor-names img {
+        width: 70px !important;
+    }
+    .investor-names .slick-list {
+        height: 40px;
+    }
+    .section1 {
+        padding: 180px 20px 120px 20px;
+    }
+    .section1-container p {
+        font-size: .9rem;
+    }
+    .section1-img {
+        width: 90%;
+    }
+    .investor {
+        padding: 0px;
+    }
+    .slick-initialized .slick-slide {
+        width: 80px !important;
+    }
+    .cityBadge, .cityname {
+        width: 90px;
+    }
+    .citySlide {
+        margin: 0px 30px !important;
+    }
+    .slick-next {
+        right: -10px !important;
+    }
+    .slick-prev {
+        left: -10px !important;
+    }
+    .slick-dots li,
+    .slick-dots li button,
+    .slick-dots li button:before {
+        height: 10px !important;
+        width: 10px !important;
+    }
+    #citySlider {
+        height: 130px !important;
+    }
+    .icon-container {
+        left: -20px;
+    }
+    .icon-container img, .icon3 {
+        width: 80px;
+    }
+    .icon2 {
+        margin-top: 460px;
     }
 }
