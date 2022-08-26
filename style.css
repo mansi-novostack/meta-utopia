@@ -745,6 +745,25 @@ a {
     visibility: hidden;
 }
 
+/* Why Us page styles */
+section.section1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.section1 .videoframe {
+    height: 50vh;
+    width: 80%;
+    max-width: 1020px;
+    margin: 40px auto;
+}
+
+section.section1 img {
+    width: 80%;
+    max-width: 600px;
+}
+
 /* Media Queries */
 @media screen and (max-width:1024px) {
     .map-container,
